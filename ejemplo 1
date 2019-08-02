@@ -1,0 +1,16 @@
+lass Client {
+    private AbstractFactory factory;
+
+    public A(AbstractFactory factory) {
+        this.factory = factory;
+    }
+
+    public void doSomething() {
+        ProductA p = factory.crearProductoA();
+        p.foo();
+    }
+}
+
+interface AbstractFactory {
+    ProductoA crearProductoA();
+}
